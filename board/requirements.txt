@@ -1,0 +1,3 @@
+# PYNQ host-side dependencies (on the board)
+numpy
+# pynq is preinstalled in the PYNQ image

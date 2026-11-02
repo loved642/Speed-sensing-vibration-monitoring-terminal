@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-29",
+  "firmware_version": "0x00020002",
+  "hardware_verified": false,
+  "clock_hz": 100000000,
+  "fs_hz": 800,
+  "nfft": 1024,
+  "slots": 20,
+  "speed_average_periods": 20,
+  "speed_window": "rolling one revolution",
+  "raw_period_register": "0x4C (unchanged, last slot)",
+  "window_cycles_registers": [
+    "0xA0 low",
+    "0xA4 high"
+  ],
+  "average_periods_register": "0xA8",
+  "window_filled_register": "0xAC",
+  "steady_criterion": "frame max-min <= 5% of mean of filtered speed; criterion unchanged",
+  "response_note": "one full revolution required at startup; true speed changes settle over one revolution",
+  "simulations": [
+    "I2C 6271 checks PASS",
+    "FFT 12 frames/6144 positive-frequency bins PASS",
+    "speed raw/averaged, slot error, true step, timeout, restart PASS",
+    "AXI/snapshots/PWM/watchdog PASS",
+    "Python host 8 tests PASS"
+  ],
+  "board_evidence": "User installed original package: system/hash check PASS; 7/8 frames steady at normal wheel 70%, about 112 RPM, filtered span 0.4..0.9%, no I2C faults/drops. Diagnostic rawSlotRPM unit fix not rerun on board yet.",
+  "payload_sha256": {
+    "vib.bit": "05c480f6ec1592811d3ba37718f6ef2bc79272fad9a6de93a6389ad51f888ba9",
+    "vib.hwh": "5bd51468d91894cff28b588ecc0c9641e7b0fb8d102ba7aed0ac01970fb4e4eb",
+    "vib_monitor.py": "b97f1491c9e01ee9f0080ad1738e81215b4894c2706df5c4e8be732c3241b25a",
+    "run_measure.py": "6be79cf1d2ede22bf5409107305a9bd297e45cd3334ec82adfb87ac9bdba9627",
+    "baseline.py": "84eaf3c3eedbb0bcece0551a8e331bebf4d0638a7c1f12a0f79d4c2af56dd59d",
+    "run_measure.sh": "ea978aaa5a9ff7c4daa84d2682483d3601e95162c822b6343ce85a8100855244",
+    "test_speed_average.py": "343358e9af093820a82e702f9d50fd7fb1e3703fed5843709a0bb8d813fb0086",
+    "run_speed_average.sh": "99f742f445e0ff46b96f28aedaf36ddcfd71dfc8c24792ee7045adb9ba717481",
+    "system_check.py": "18ebde98090c98f2f56f336b0100444bd491758db40d050d0009ab15dcc35295",
+    "run_system_check.sh": "145cd49ac13a1937c5c51a6a75c3ba00501049c536272b6ba19f6ad7e81a50b8"
+  },
+  "source_sha256": {
+    "src/speed_capture.v": "70a81bab3dda04abc3d5df0ec08cd379273109e2783673bd3540b266fbd460c3",
+    "src/vib_top.v": "6319c5389f8a407a3c5c5d610f7067faa1b4843a8979734cd6a89c8a053bd94d",
+    "sim/tb_speed.v": "adf18d8f1e6f219d3c4227b1403a43d02256df391a07ec5e34b4aa283cc3418b",
+    "sim/tb_vib_axi.v": "532dd76a61adffc8c758bf3940277c587ed3a0e84f7c08c8b990c9080ac61ab7",
+    "sim/test_host.py": "4baf3cd15fe8ad297af211cd87bd31f80f0c881abb15a0a649bdab7222fc7063",
+    "build/build_overlay.tcl": "d6103c57d058739072fdc7f5448af41346255ffe145803b3683a9e2606909dc8"
+  }
+}

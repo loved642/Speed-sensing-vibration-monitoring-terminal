@@ -1,0 +1,75 @@
+{
+  "feature_mode": "broadband",
+  "n_train_usable": 40,
+  "n_test": 120,
+  "threshold_source": "validation",
+  "fixed_threshold": {
+    "rms_threshold": 389.025,
+    "false_positive_rate": 0.0,
+    "miss_rate": 1.0,
+    "accuracy": 0.3333333333333333,
+    "tp": 0,
+    "tn": 40,
+    "fp": 0,
+    "fn": 80,
+    "n_unknown": 0,
+    "coverage": 1.0
+  },
+  "speed_baseline": {
+    "k": 4.673270122421059,
+    "bin_width": 20.0,
+    "false_positive_rate": 0.0,
+    "miss_rate": 0.9,
+    "accuracy": 0.4,
+    "tp": 8,
+    "tn": 40,
+    "fp": 0,
+    "fn": 72,
+    "n_unknown": 0,
+    "coverage": 1.0
+  },
+  "common_frames": {
+    "fixed": {
+      "false_positive_rate": 0.0,
+      "miss_rate": 1.0,
+      "accuracy": 0.3333333333333333,
+      "tp": 0,
+      "tn": 40,
+      "fp": 0,
+      "fn": 80,
+      "n_unknown": 0,
+      "coverage": 1.0
+    },
+    "speed": {
+      "false_positive_rate": 0.0,
+      "miss_rate": 0.9,
+      "accuracy": 0.4,
+      "tp": 8,
+      "tn": 40,
+      "fp": 0,
+      "fn": 72,
+      "n_unknown": 0,
+      "coverage": 1.0
+    }
+  },
+  "runs": {
+    "train": [
+      "37639fd6803b429fba33cbc2f90ecd7f",
+      "f6dd8806b36d44a390625f0a41a9b1cc"
+    ],
+    "validation": [
+      "6bb2e243170b4800b85decadfeedc6d6",
+      "9dea59dfacf44118aef9e0269bc23851"
+    ],
+    "test": [
+      "0544b4e5597f46b1bc83413daf2796d3",
+      "1ca3f05a84244161b54910f815b29080",
+      "3dc1db5c36d24c86a1b2512b9dc4bdd1",
+      "7899b5b89ce7406e81fe500f9a2b0d15",
+      "8620019efe4d46a68a6e8956dcb1e235",
+      "9161f3db01cb446f9a674913748bd68b"
+    ]
+  },
+  "alarm_latency_s": null,
+  "latency_note": "Requires measured physical fault-onset timestamps; not inferred from labels."
+}
