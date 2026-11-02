@@ -1,0 +1,23 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct 18 22:38:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_i2c_repair_sim/xsim_script.tcl
+# xsim {tb_i2c_repair_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+TB_I2C: normal, repeated START, burst ACK/NACK and cadence checked
+TB_I2C: NACK at every TX phase, absent/wrong-address sensor, invalid ID and automatic retry checked
+TB_I2C: FAIL SCL low time meets fast-mode minimum at 7640225000 status=00000002
+TB_I2C: FAIL SCL low time meets fast-mode minimum at 8247725000 status=00000002
+TB_I2C: stuck SDA, nine-clock bus recovery, SCL timeout and clock stretching checked
+Fatal: TB_I2C: FAIL errors=2 checks=1075509
+Time: 10703790 ns  Iteration: 0  Process: /tb_adxl345_i2c/Initial166_8  Scope: tb_adxl345_i2c  File: C:/Users/MECHREVO/Documents/OPENCODE/speed_aware_vibration_monitor/sim/tb_adxl345_i2c.v Line: 210
+$finish called at time : 10703790 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 18 22:38:36 2026...

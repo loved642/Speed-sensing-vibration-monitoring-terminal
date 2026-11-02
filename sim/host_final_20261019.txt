@@ -1,0 +1,10 @@
+test_collector_explicit_label_streaming_and_exception_stop (__main__.HostTests.test_collector_explicit_label_streaming_and_exception_stop) ... ok
+test_evaluation_run_isolation_and_coverage (__main__.HostTests.test_evaluation_run_isolation_and_coverage) ... ok
+test_snapshot_coherence_and_signed_mean (__main__.HostTests.test_snapshot_coherence_and_signed_mean) ... ok
+test_unknown_quality_and_untrained_speed (__main__.HostTests.test_unknown_quality_and_untrained_speed) ... ok
+test_wait_frame_and_motor_validation (__main__.HostTests.test_wait_frame_and_motor_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.047s
+
+OK
