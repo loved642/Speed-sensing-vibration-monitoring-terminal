@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+sim/work/
+build/*_proj*/
+.Xil/
+*.jou
+*.log
